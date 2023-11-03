@@ -10,7 +10,7 @@
         <link rel="icon" href="img/logo.ico">            
         <meta name="author" content="Sekma">
         <link rel="stylesheet" href="css/navBar.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
@@ -18,50 +18,61 @@
     </head>
     <body>
         <header>
-            <div class="menu-area">
-                <!-- logo -->
-                <div class="nav-left">
-                    <div class="logo">
-                        <a href=""><img src="img/logo.jpg" alt="logo" width="150px"></a>
-                        <div class="grey-line"></div>
-                    </div>
-                    <!--Mobile Navigation Toggler-->
-						<div class="mobile-nav-toggler">
-                            <div for="mobile-nav-toggler" class="toggler-burger">
-                                <i class="icon-bar"></i>
-                                <i class="icon-bar"></i>
-                                <i class="icon-bar"></i>
+            <!-- menu-desktop -->
+            <div class="menu-desktop">
+                <div class="menu-area">
+                    <!-- logo -->
+                    <div class="nav-left">
+                        <div class="logo">
+                            <a href=""><img src="img/logo.jpg" alt="logo" width="150px"></a>
+                            <div class="grey-line"></div>
+                        </div>
+                        <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler">
+                                <div for="mobile-nav-toggler" class="toggler-burger">
+                                    <i class="icon-bar"></i>
+                                    <i class="icon-bar"></i>
+                                    <i class="icon-bar"></i>
+                                </div>
                             </div>
-						</div>
-                    <!-- desktop-menu -->
-                    <nav class="main-menu">
-                        <ul class="navigation">
-                            <li class="menu-item"><a id="accueil" href="">ACCUEIL</a></li>
-                            <li class="menu-item"><a href="">A PROPOS</a></li>
-                            <li class="menu-item"><a href="">NOS SERVICES</a></li>
-                            <li class="menu-item"><a href="">NOS PROJECTS</a></li>
-                            <li class="menu-item"><a href="">BLOG</a></li>
-                        </ul>
-                    </nav>
-                </div>       
-            </div>
-            <div class="nav-right">
-                <div class="support-box">
-                    <h5><a href=""><i class="fa fa-phone fa-2x" aria-hidden="true"></i><span>MOB: (+216) 21 002 629</span></a></h5>
+                        
+                        <nav class="main-menu">
+                            <ul class="navigation">
+                                <li class="menu-item"><a href="">ACCUEIL</a></li>
+                                <li class="menu-item"><a href="">A PROPOS</a></li>
+                                <li class="menu-item"><a id="service" href="">NOS SERVICES</a></li>
+                                <li class="menu-item"><a href="">NOS PROJECTS</a></li>
+                                <li class="menu-item"><a href="">BLOG</a></li>
+                            </ul>
+                        </nav>
+                    </div>       
+                </div>
+                <div class="nav-right">
+                    <div class="support-box">
+                        <h5><a href=""><i class="fa-solid fa-headset fa-2x"></i><span>MOB: (+216) 21 002 629</span></a></h5>
+                    </div>
                 </div>
             </div>
+            <div class="menu-scroll" id="menu-scroll">
+                <ul>
+                    <li class="menu-scroll-item"><a href="">Service numéro 1<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li class="menu-scroll-item"><a href="">Service numéro 2<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li class="menu-scroll-item"><a href="">Service numéro 3<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li class="menu-scroll-item"><a href="">Service numéro 4<i class="fa-solid fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
         </header>
-        <div class="menu-scroll" id="menu-scroll"></div>
+        
         <!-- menu-mobile -->
         <div class="mobile-menu">
             <div class="nav-logo"><a href=""><img src="img/logo.jpg" alt="logo"></a></div>
             <div class="menu-box">
                 <ul class="navigation-mobile">
-                    <li class="menu-item"><a href="">ACCUEIL</a></li>
-                    <li class="menu-item"><a href="">A PROPOS</a></li>
-                    <li class="menu-item"><a href="">NOS SERVICES</a></li>
-                    <li class="menu-item"><a href="">NOS PROJECTS</a></li>
-                    <li class="menu-item"><a href="">BLOG</a></li>
+                    <li class="mobile-menu-item"><a href="">ACCUEIL</a></li>
+                    <li class="mobile-menu-item"><a href="">A PROPOS</a></li>
+                    <li class="mobile-menu-item"><a href="">NOS SERVICES</a></li>
+                    <li class="mobile-menu-item"><a href="">NOS PROJECTS</a></li>
+                    <li class="mobile-menu-item"><a href="">BLOG</a></li>
                 </ul>
             </div>
             <div class="contact-info">

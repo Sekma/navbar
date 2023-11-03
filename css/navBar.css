@@ -18,8 +18,8 @@ body {
 .mobile-menu{
     display: none;
 }
-    /* header */
-    header{
+    /* .menu-desktop */
+    .menu-desktop{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -29,16 +29,15 @@ body {
        background-color: white;
        z-index: 1;
     }
-    header li{
+    .menu-desktop li{
         list-style-type: none;
     }
-    header a{
+    .menu-desktop a{
         text-decoration: none;
         color: black;
-        line-height: 30px;
         transition: all 0.5s;
     }
-    header a:hover{
+    .menu-desktop a:hover{
         color: #41c4af;
     }
     /* menu-area */
@@ -105,14 +104,53 @@ body {
             }
             /* menu scroll */
             .menu-scroll{
+                display: none;
                 position: relative;
+                z-index: 1;
                 left: 250px;
-                opacity: 0;
-                background-color: rgb(189, 189, 189);
-                transition: opacity 1s;
+                top: 80px;
+                width: 1000px;
+                height: 400px;
+                background-color: #e5e5e5;
+            }
+            .menu-scroll ul{
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                width: 300px;
+            }
+            .menu-scroll ul li.menu-scroll-item{
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                width: 100%;
+            }
+            .menu-scroll ul li.menu-scroll-item:nth-child(1){
+                border-left: 5px solid rgb(47, 108, 159);
+            }
+            .menu-scroll ul li.menu-scroll-item:nth-child(2){
+                border-left: 5px solid rgb(135, 200, 70);
+            }
+            .menu-scroll ul li.menu-scroll-item:nth-child(3){
+                border-left: 5px solid rgb(105, 114, 126);
+            }
+            .menu-scroll ul li.menu-scroll-item:nth-child(4){
+                border-left: 5px solid rgb(243, 161, 53);
+            }
+            .menu-scroll ul li.menu-scroll-item a{
+                text-decoration: none;
+                padding: 30px 0;
+                font-family: 'lato';
+                color: black;
+            }
+            .menu-scroll ul li.menu-scroll-item:hover{
+                background-color: #ffffff;
+                opacity: 0.8;
+                transition: all 0.5s;
+            }
+            .menu-scroll ul li.menu-scroll-item a i{
+                margin-left: 70px;
             }
             .menu-scroll-active{
-                width: 1000px;
-                height: 500px;
-                opacity: 1;
+                display: block;
             }
