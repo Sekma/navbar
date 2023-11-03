@@ -57,6 +57,7 @@ body {
             align-items: center;
             justify-content: end;
             width: 25%;
+            padding-top: 5px;
         }
         .nav-left .grey-line{
             width: 2px;
@@ -107,9 +108,9 @@ body {
                 display: none;
                 position: relative;
                 z-index: 1;
-                left: 250px;
+                left: 19%;
                 top: 80px;
-                width: 1000px;
+                width: 77%;
                 height: 400px;
                 background-color: #e5e5e5;
             }
@@ -117,7 +118,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 list-style-type: none;
-                width: 300px;
+                width: 30%;
             }
             .menu-scroll ul li.menu-scroll-item{
                 display: flex;
@@ -153,4 +154,154 @@ body {
             }
             .menu-scroll-active{
                 display: block;
+            }
+            .menu-scroll .service{
+                display: none;
+                height: 100%;
+                width: 70%;
+                position: relative;
+                left: 30%;
+                bottom: 316px;
+                background-color: white;
+                text-align: center;
+                font-size: 30px;
+                color: red;
+            }
+            .menu-scroll .service-active{
+                display: block;
+            }
+
+            /* tablet version */
+            @media (max-width: 992px){
+                
+                .nav-left{
+                    width: 100%;
+                    justify-content:start;
+                    gap: 30px;
+                }
+                .nav-left .logo{
+                    width: 40%;
+                    justify-content: start;
+                }
+                .nav-right{
+                    width: 40%;
+                }
+                .nav-left .main-menu{
+                    display: none;
+                }
+                /* nav-toggler */
+                .mobile-nav-toggler{
+                    display: block;
+                    opacity: 0.6;
+                    transition: all 0.5s;
+                }
+                .mobile-nav-toggler:hover{
+                    cursor: pointer;
+                    opacity: 1;
+                }
+                .mobile-nav-toggler .toggler-burger{
+                    display: flex;
+                    flex-direction: column;
+                    width: 30px;
+                    height: 20px;
+                    justify-content: space-between;
+                }
+                .mobile-nav-toggler .toggler-burger .icon-bar{
+                    width: 100%;
+                    height: 3px;
+                    background-color: black;
+                    transition: all 0.5s;
+                }
+                .mobile-nav-toggler .toggler-burger.open .icon-bar:nth-child(1) {
+                    transform: translateY(8px) rotate(-45deg);
+                    background-color: #41c4af;
+                    transition: all 0.5s;
+                    }
+                    
+                    .mobile-nav-toggler .toggler-burger.open .icon-bar:nth-child(2) {
+                      opacity: 0;
+                      transition: opacity 0.5s;
+                    }
+                    
+                    .mobile-nav-toggler .toggler-burger.open .icon-bar:nth-child(3) {
+                      transform: translateY(-8px) rotate(45deg);
+                      background-color: #41c4af;
+                      transition: all 0.5s;
+                    }
+
+                    /* menu mobile */
+                    .mobile-menu{
+                        display: none;
+                        position: fixed;
+                        top: 85px;
+                        left: 20%;
+                        background-color: rgb(239, 239, 239);
+                        padding: 20px;
+                        width: 80%;
+                    }
+                    .mobile-menu.open{
+                        display: block;
+                    }
+                    .mobile-menu .nav-logo{
+                        height: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border-bottom: 1px solid rgb(201, 201, 201);
+                    }
+                    .mobile-menu .nav-logo img{
+                        width: 150px;
+                    }
+                    .menu-box .navigation-mobile{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .menu-box .navigation-mobile .mobile-menu-item{
+                        list-style-type: none;
+                        padding: 13px;
+                        border-bottom: 1px solid rgb(203, 203, 203);
+                    }
+                    .contact-info h4{
+                        padding: 20px;
+                        text-align: center;
+                        font-family: 'lato';
+                    }
+                    .contact-info ul li{
+                        list-style-type: none;
+                        padding: 8px;
+                    }
+                    .menu-box .navigation-mobile .mobile-menu-item a, .contact-info ul li a{
+                        text-decoration: none;
+                        padding: 15px 10%;
+                        color: black;
+                        font-family: 'lato';
+                        opacity: 0.9;
+                        width: 100%;
+                    }
+                    
+                    .contact-info ul li a{
+                        font-size: 14px;
+                    }
+
+            }
+            /* mobile version */
+            @media (max-width: 767px){
+                .nav-right{
+                    display: none;
+                }
+                .menu-area{
+                    width: 100%;
+                }
+                .nav-left{
+                    width: 100%;
+                    justify-content: space-around;
+                }
+                .nav-left .logo{
+                    width: 70%;
+                    justify-content: start;
+                }
+                .contact-info ul li a{
+                    font-size: 10px;
+                }
             }
