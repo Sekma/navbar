@@ -17,7 +17,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
-        <header>
+        <header id="home">
             <!-- menu-desktop -->
             <div class="menu-desktop">
                 <div class="menu-area">
@@ -28,6 +28,7 @@
                             <div class="grey-line"></div>
                         </div>
                         <!--Mobile Navigation Toggler-->
+                        <!-- toggler button -->
                             <div class="mobile-nav-toggler">
                                 <div for="mobile-nav-toggler" class="toggler-burger">
                                     <i class="icon-bar"></i>
@@ -41,7 +42,7 @@
                                 <li class="menu-item"><a href="">ACCUEIL</a></li>
                                 <li class="menu-item"><a href="">A PROPOS</a></li>
                                 <li class="menu-item"><a id="service" href="">NOS SERVICES</a></li>
-                                <li class="menu-item"><a href="">NOS PROJECTS</a></li>
+                                <li class="menu-item"><a href="">NOS PROJETS</a></li>
                                 <li class="menu-item"><a href="">BLOG</a></li>
                             </ul>
                         </nav>
@@ -66,7 +67,8 @@
                 <div id="service-4" class="service">Service-4</div>
             </div>
         </header>
-        
+        <!-- Home button -->
+        <div class="home-button"><a href="#home"><i class="fa-solid fa-arrow-up"></i></a></div>
         <!-- menu-mobile -->
         <div class="mobile-menu">
             <div class="nav-logo"><a href=""><img src="img/logo.jpg" alt="logo"></a></div>
@@ -75,7 +77,7 @@
                     <li class="mobile-menu-item"><a href="">ACCUEIL</a></li>
                     <li class="mobile-menu-item"><a href="">A PROPOS</a></li>
                     <li class="mobile-menu-item"><a href="">NOS SERVICES</a></li>
-                    <li class="mobile-menu-item"><a href="">NOS PROJECTS</a></li>
+                    <li class="mobile-menu-item"><a href="">NOS PROJETS</a></li>
                     <li class="mobile-menu-item"><a href="">BLOG</a></li>
                 </ul>
             </div>
@@ -88,8 +90,9 @@
                 </ul>
             </div>
         </div>
-        <section style="height: 1000px;">
-            <h1 style="position: absolute; top: 250px; left: 40%; z-index: -1;">Body Container</h1>
+        <section style="height: 1200px; position: absolute; z-index: -1; top: 100px">
+            <h1>Home</h1>
+            <h1 style="position: relative; top: 250px; left: 40%; ">Body Container</h1>
         </section>
         <script src="js/navBar.js"></script>
     </body>

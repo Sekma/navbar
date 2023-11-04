@@ -170,10 +170,29 @@ body {
             .menu-scroll .service-active{
                 display: block;
             }
-
+            /* home button */
+            .home-button{
+                display: none;
+                position: fixed;
+                left: 93%;
+                z-index: 2;
+                background-color: white;
+                box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+                border-radius: 4px;
+                padding: 8px;
+                opacity: 0.6;
+            }
+            .home-button a{
+                text-decoration: none;
+                color: black;
+                padding: 8px;
+            }
             /* tablet version */
             @media (max-width: 992px){
-                
+                .menu-desktop{
+                    position: relative;
+                    z-index: 1;
+                }
                 .nav-left{
                     width: 100%;
                     justify-content:start;
@@ -232,12 +251,12 @@ body {
                     /* menu mobile */
                     .mobile-menu{
                         display: none;
-                        position: fixed;
-                        top: 85px;
-                        left: 20%;
-                        background-color: rgb(239, 239, 239);
+                        background-color: rgb(255, 255, 255);
+                        box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.5);
+                        position: relative;
+                        top: -10px;
+                        z-index: 1;
                         padding: 20px;
-                        width: 80%;
                     }
                     .mobile-menu.open{
                         display: block;
@@ -283,10 +302,21 @@ body {
                     .contact-info ul li a{
                         font-size: 14px;
                     }
+                    .home-button{
+                        display: block;
+                        top: -40px;
+                        transition: all 0.5s;
+                    }
+                    .home-button.scroll{
+                        top: 40%;
+                    }
 
             }
             /* mobile version */
             @media (max-width: 767px){
+                .nav-left.open .logo{
+                    opacity: 0;
+                }
                 .nav-right{
                     display: none;
                 }
@@ -301,7 +331,13 @@ body {
                     width: 70%;
                     justify-content: start;
                 }
+                .mobile-menu{
+                    top: -20px;
+                }
                 .contact-info ul li a{
                     font-size: 10px;
+                }
+                .home-button{
+                    left: 85%;
                 }
             }

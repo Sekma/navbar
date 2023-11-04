@@ -62,11 +62,25 @@ $("#menu-scroll-item-4").hover(function () {
             $("#service-1").removeClass("service-active");
         }
     );
-});
 
-//burger toggler
+    //burger toggler
 $(".toggler-burger").click(function (e) { 
     e.preventDefault();
     $(".toggler-burger").toggleClass("open");
     $(".mobile-menu").toggleClass("open");
+    $(".nav-left").toggleClass("open");
 });
+
+//home button
+$(window).scroll(function () { 
+    if($(window).scrollTop()>80){
+        $(".home-button").addClass("scroll");
+    }
+    else{
+        $(".home-button").removeClass("scroll");
+    }
+});
+
+});
+
+
